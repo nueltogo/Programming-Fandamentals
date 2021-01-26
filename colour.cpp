@@ -5,13 +5,8 @@ enum {RED, YELLOW, AMBER=YELLOW, GREEN};
 
 int main()
 {
-	int colour = RED;
-	while (colour == RED)
-	{
-
-		std::cout << "The colour is red" << std::endl;
-		std::cout << "Enter another number" << std::endl;
-		std::cin >> colour; 
-	}
-	std::cout << "The colour has been changed" << std::endl;
+	std::cout << "Red is under number" << RED << std::endl;
+	std::cout << "Yellow is under number" << YELLOW << std::endl;
+	std::cout << "Amber is under number" << AMBER << std::endl;
+	std::cout << "Green is under number" << GREEN << std::endl; 	
 }

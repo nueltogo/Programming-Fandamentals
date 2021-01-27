@@ -45,9 +45,9 @@ void output(char * i,int count)
 void output(char * i,int count, int last)
 {
        std::cout << "This is an string: " << i << ": ";
-       i+=count;
        for(int h=count; h < count+last; h++)
        {
+	       i+=last;
 	       std::cout << *i;
 	       i++;
        }
@@ -55,7 +55,7 @@ void output(char * i,int count, int last)
 }
 int main()
 {
-	char myname[] {"Nunana Elorm Togo"};
+	char myname[] {"Nunana"};
 	char * mynameptr {myname};
 
 	output(378854);

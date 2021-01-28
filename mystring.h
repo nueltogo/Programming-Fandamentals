@@ -1,10 +1,25 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef MYSTRING_H
+#define MYSTRING_H
+#include <iostream>
 
-int strcmp2(const char *l, const char *r);
-int strlen2(const char *s);
-//char *strcat(char *l, const char *s);
-//char *strcpy(char *l, const char *r);
-//char *toupper(char *s);
+namespace my {
+int strcmp(const char *R, const char *L);
+}
 
-#endif
+namespace my {
+int strlen(const char *s);
+}
+
+namespace my {
+char *strcat(char *L, const char *R);
+}
+
+namespace my {
+char *strcpy(char *L, const char *R);
+}
+
+namespace my {
+char *toupper(char *s);
+}
+
+#endif /* MYSTRING_H */

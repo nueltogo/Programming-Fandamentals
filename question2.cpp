@@ -19,9 +19,11 @@ std::string toggle()
 
 int main()
 {
+	std::string (*f) ();
+	f = toggle;
 	int cont {1};
 	while(cont){
-		std::string current_state = toggle();
+		std::string current_state = f();
 		std::cout << "The current state is: " << current_state << std::endl;
 		std::cout << "Toggle again(Yes = 1, No = 0): ";
 		std::cin >> cont;

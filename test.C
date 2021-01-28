@@ -1,11 +1,12 @@
 #include <iostream>
 #include <string>
-#include "mystring.h"
+#include "mystring.C"
+using namespace my;
 
 int main()
 {
-	const char myname[] {"Nunana Togo"};
-	const char yourname[] {"Nunana Elorm Togo"};
-	int val = strcmp2(myname, yourname);
-	std::cout << val << std::endl;
+	char myname[] {"Nunana Elorm Togo"};
+	char yoursname[11] {};
+	toupper(myname);
+	std::cout << myname << std::endl;
 }
